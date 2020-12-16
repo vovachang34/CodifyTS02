@@ -1,0 +1,29 @@
+1) Таблица Transactions:
+Выбрать столбцы Id Total Date где Status равен 2
+
+select id, total, date FROM Transactions
+WHERE Status = 2
+
+---
+
+2)Таблица Services:
+Выбрать ID View OperatorId Где MaxAmount <= 5000
+
+select Id, View, OperatorId FROM Services
+WHERE MaxAmount <= 5000
+
+---
+
+3)Таблица BillCollection:
+Выбрать ID Date Transaction где BillCount >0 и < 4
+
+select ID, Date FROM BillCollection
+WHERE Billcount >0 AND Billcount <4
+---
+
+4)Таблица Payments:
+Выбрать все столбцы где PaymentAmount не равно 60 и больше 15 и ReceiptId не равно NULL
+
+
+select Paymentamount FROM Payments
+WHERE PaymentAmount !60 and >15 AND receiptId !null
